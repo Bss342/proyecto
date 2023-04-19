@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* sirve para que no haya márgenes ni rellenos en el elemento seleccionado y que se tenga en cuenta el tamaño de su borde. */
+html{
+  font-size: 62.5%;
+}
+/* Establece el tamaño de fuente base para todo el documento, 62.5% se utiliza porque es el equivalente al 10px */
+.container{
+  width: 100%;
+  /* sirve para darle el ancho al div contenedor */
+  height: 100vh;
+   /* sirve para darle la altura al div con un vh (altura de la ventana gráfica)*/
+  background-color: #C4C4C4;
+  /* sirve para darle color al fondo */
+  font-family: 'Share Tech', sans-serif;
+  /* sirve para darle una fuente a la letra */
+  min-width: 1200px;
+  /* sirve para establecer la anchura mínima que debe tener antes de que se apliquen estilos adicionales. */
+  position: relative;
+  /* sirve para establecer la posición de manera relativa a su posición normal. */
+}
+
+.logo{
+  font-weight: 600;
+  /* sirve para darle el grosor o la negrita del texto */
+  font-size: 3.8rem;
+  /* sirve para cambiar el tamaño del texto */
+}
+
+nav{
+ /* sirve para modificar una sección de la pagina*/
+  padding: 20px 50px;
+  /* establece la cantidad de espacio en blanco que se agregará dentro de los bordes */
+  display: flex;
+  /* sirve para que sea un contenedor flexible y que todo lo que tenga se ajuste */
+  align-items: center;
+  /* sirve para cenntrar los elementos */
+  justify-content: space-between;
+  
+}
+ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+ul li:hover{
+  background-color: #ff4321;
+  border-radius: 25px;
+  text-decoration: none;
+}
+header{
+ position: absolute;
+ bottom: 30%;
+ padding: 0 50px;
+}
+header h1{
+  font-size: 7rem;
+}
+header h2{
+  font-size: 4rem;
+}
+header p{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header button{
+  padding: 0 5px;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-color: #ff4321;
+  border-radius: 25px;
+  transition: width 0.5s;
+}
+button img{
+  display: none;
+}
+button:hover img{
+  display: block;
+}
+header button:hover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.container .emp{
+  position: absolute;
+  height: 600px;
+  width: 550px;
+  right: 7%;
+  bottom: 0;
+  z-index: 999;
+}
+.container .fondo-emp{
+  position: absolute;
+  height: 550px;
+  width: 550px;
+  right: 4%;
+  bottom: 0;
+}
+.icons{
+  position: absolute;
+  bottom: 8%;
+  padding: 0 50px;
+}
+.icons i{
+  font-size: 2.5rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.icons i:hover{
+  color: #ff4321;
+  transition: all 0.3s ease 0s;
+}
